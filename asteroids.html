@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet">
+    <title>Omnispace</title>
+  </head>
+<body class="text-white font-sans">
+  <header class="bg-black/70 backdrop-blur-sm shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center space-x-3">
+        <div class="text-2xl font-bold tracking-wide">🚀 MonLogo</div>
+      </div>
+      <nav class="space-x-6 text-gray-300 text-sm uppercase font-medium">
+        <a href="index.html" class="hover:text-white transition">Homepage</a>
+        <a href="asteroids.html" class="hover:text-white transition">Asteroids</a>
+        <a href="about.html" class="hover:text-white transition">About</a>
+      </nav>
+    </div>
+  </header>
+  <h1 class="text-4xl md:text-5xl font-extrabold mb-6"> Astroids around the galaxies</h1>
+
+    <div class="max-w-3xl w-full bg-gray-800/70 backdrop-blur-md rounded-xl shadow-lg p-6">
+      <h2 id="titre" class="text-xl font-semibold mb-4 text-center">Loading...</h2>
+      <div id="media-container" class="flex justify-center mb-4"></div>
+      <p id="description" class="text-gray-300 text-justify text-sm md:text-base"></p>
+    </div>
+  </main>
+  <footer class="bg-black/80 text-gray-400 py-6 text-center text-sm">
+    <p>&copy; 2025 - Cosmic Exploration. All rights reserved.</p>
+    <p>Propulsed by NASA'S API - <a href="https://api.nasa.gov" class="underline hover:text-white">Discover the API</a></p>
+  </footer>
+    <script type="module" src="/src/neow.js"></script>
+  </body>
+</html>
