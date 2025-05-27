@@ -15,14 +15,7 @@ async function loadNasaData() {
       img.src = data.url;
       img.alt = data.title;
       container.appendChild(img);
-    } else if (data.media_type === 'video') {
-      const iframe = document.createElement('iframe');
-      iframe.src = data.url;
-      iframe.width = '560';
-      iframe.height = '315';
-      iframe.allowFullscreen = true;
-      container.appendChild(iframe);
-    }
+    } 
   } catch (error) {
     document.getElementById('titre').textContent = "Erreur de chargement";
     console.error(error);
