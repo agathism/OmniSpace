@@ -23,17 +23,15 @@
     </div>
   </header>
   <main class="flex flex-col items-center justify-center min-h-screen py-16 px-4 text-center">
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-6"> Astronomical image of the day</h1>
-    <div class="max-w-3xl w-full bg-gray-800/70 backdrop-blur-md rounded-xl shadow-lg p-6">
-      <h2 id="titre" class="text-xl font-semibold mb-4 text-center">Loading...</h2>
-      <div id="media-container" class="flex justify-center mb-4"></div>
-      <p id="description" class="text-gray-300 text-justify text-sm md:text-base"></p>
+    <div class="container mx-auto px-4 py-12">
+        <h1 class="text-3xl font-bold mb-8 text-center">Images Gallery</h1>
+        <div id="gallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
     </div>
   </main>
   <footer class="bg-black/80 text-gray-400 py-6 text-center text-sm">
     <p>&copy; 2025 - Cosmic Exploration. All rights reserved.</p>
     <p>Propulsed by NASA Open API - <a href="https://api.nasa.gov" class="underline hover:text-white">Discover the API</a></p>
   </footer>
-    <script type="module" src="/src/apod.js"></script>
+    <script type="module" src="/src/gallery.js"></script>
   </body>
 </html>

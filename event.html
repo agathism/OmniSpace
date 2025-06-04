@@ -6,29 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet">
     <title>Omnispace</title>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map { width: 100%; height: 500px; }
+    </style>
   </head>
-<body class="text-white font-sans">
-  <header class="bg-black/70 backdrop-blur-sm shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <div class="flex items-center space-x-3">
-        <div class="text-2xl font-bold tracking-wide">🚀 MonLogo</div>
+  <body class="text-white font-sans">
+    <header class="bg-black/70 backdrop-blur-sm shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <div class="flex items-center space-x-3">
+          <div class="text-2xl font-bold tracking-wide">🚀 MonLogo</div>
+        </div>
+        <nav class="space-x-6 text-gray-300 text-sm uppercase font-medium">
+          <a href="index.html" class="hover:text-white transition">Homepage</a>
+          <a href="gallery.html" class="hover:text-white transition">Gallery</a>
+          <a href="event.html" class="hover:text-white transition">Events</a>
+          <a href="asteroids.html" class="hover:text-white transition">Asteroids</a>
+          <a href="about.html" class="hover:text-white transition">About</a>
+        </nav>
       </div>
-      <nav class="space-x-6 text-gray-300 text-sm uppercase font-medium">
-        <a href="index.html" class="hover:text-white transition">Homepage</a>
-        <a href="event.html" class="hover:text-white transition">Events</a>
-        <a href="asteroids.html" class="hover:text-white transition">Asteroids</a>
-        <a href="about.html" class="hover:text-white transition">About</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-6"> Events around the world</h1>
-      <div id="eonet-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-  </main>
-  <footer class="bg-black/80 text-gray-400 py-6 text-center text-sm">
-    <p>&copy; 2025 - Cosmic Exploration. All rights reserved.</p>
-    <p>Propulsed by NASA'S API - <a href="https://api.nasa.gov" class="underline hover:text-white">Discover the API</a></p>
-  </footer>
-    <script type="module" src="#"></script>
+    </header>
+    <main classs="flex justify-center items-center">
+      <h1 class="text-xl md:text-5xl font-extrabold m-2 text-center"> Events around the world</h1>
+      <div class="border rounded-sm bg-white m-10 p-2">
+      <div id="map"></div>
+      </div>
+    </main>
+    <footer class="bg-black/80 text-gray-400 py-6 text-center text-sm">
+      <p>&copy; 2025 - Cosmic Exploration. All rights reserved.</p>
+      <p>Propulsed by NASA'S API - <a href="https://api.nasa.gov" class="underline hover:text-white">Discover the API</a></p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <script type="module" src="/src/eonet.js"></script>
   </body>
 </html>
